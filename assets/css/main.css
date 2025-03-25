@@ -98,7 +98,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #888;
+		color: #646464;
 		font-family: "Lato", sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
@@ -121,7 +121,7 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #777;
+		color: #505050;
 		font-weight: 700;
 	}
 
@@ -130,11 +130,11 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2.25em 0;
+		margin: 0 0 0.25em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #777;
+		color: #505050;
 		font-weight: 700;
 		line-height: 1em;
 		margin: 0 0 0.5625em 0;
@@ -194,10 +194,10 @@ input, select, textarea {
 		}
 
 	blockquote {
-		border-left: solid 8px #e4e4e4;
+		border-left: solid 4px #e4e4e4;
 		font-style: italic;
-		margin: 0 0 2.25em 0;
-		padding: 0.5em 0 0.5em 2em;
+		/* margin: 0 0 2.25em 0; */
+		padding-left: 2em; /* padding: 0.5em 0 0.5em 2em; */
 	}
 
 	code {
@@ -279,6 +279,14 @@ input, select, textarea {
 
 		.row > .imp {
 			order: -1;
+		}
+		
+		.row > .off-0 {
+			margin-left: 3%;
+		}
+		
+		.row > .col-0 {
+			width: 30%;
 		}
 
 		.row > .col-1 {
@@ -1708,28 +1716,28 @@ input, select, textarea {
 
 	.container {
 		margin: 0 auto;
-		max-width: calc(100% - 4em);
-		width: 50em;
+		max-width: calc(100% - 5em);
+		width: 66em;
 	}
 
 		.container.xsmall {
-			width: 11.25em;
+			width: 11em;
 		}
 
 		.container.small {
-			width: 22.5em;
+			width: 22em;
 		}
 
 		.container.medium {
-			width: 33.75em;
+			width: 33em;
 		}
 
 		.container.large {
-			width: 56.25em;
+			width: 55em;
 		}
 
 		.container.xlarge {
-			width: 67.5em;
+			width: 66em;
 		}
 
 		.container.max {
@@ -1747,7 +1755,7 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			.container {
-				max-width: calc(100% - 3.375em);
+				max-width: calc(100% - 4em);
 			}
 
 		}
@@ -1785,8 +1793,8 @@ input, select, textarea {
 	}
 
 	header.major h2 {
-		color: #50c8b4;
-		font-size: 2.5em;
+		color: #50c8c8;
+		font-size: 2.25em;
 	}
 
 		header.major h2 + p {
@@ -2200,7 +2208,7 @@ input, select, textarea {
 
 		.image.main {
 			display: block;
-			height: 15.85em;
+			height: 16em;
 			border-radius: 0;
 		}
 
@@ -2222,7 +2230,7 @@ input, select, textarea {
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2.25em 0;
+		margin: 0 0 0.25em 0;
 		padding-left: 1em;
 	}
 
@@ -2433,7 +2441,7 @@ input, select, textarea {
 			}
 
 			ul.icons li .icon:before {
-				font-size: 1.25em;
+				font-size: 1.5em;
 			}
 
 /* Table */
@@ -2665,7 +2673,7 @@ input, select, textarea {
 
 		.features article .image {
 			display: inline-block;
-			padding-right: 2.5em;
+			padding-right: 2em;
 			vertical-align: middle;
 			width: 48%;
 		}
@@ -2707,7 +2715,7 @@ input, select, textarea {
 		position: fixed;
 		text-align: center;
 		top: 0;
-		width: 20em;
+		width: 16em;
 		/* right: 0; */
 	}
 
@@ -2818,8 +2826,8 @@ input, select, textarea {
 /* Wrapper */
 
 	#wrapper {
-		background: #c8c8c8;
-		padding-left: 20em;
+		background: #dcdcdc;
+		padding-left: 16em;
 	}
 
 /* Main */
@@ -2877,13 +2885,13 @@ input, select, textarea {
 		/* Basic */
 
 			body, input, select, textarea {
-				font-size: 13pt;
+				font-size: 12pt;
 			}
 
 		/* Header */
 
 			#header {
-				width: 18em;
+				width: 16em;
 			}
 
 				#header > header {
@@ -2897,7 +2905,7 @@ input, select, textarea {
 		/* Wrapper */
 
 			#wrapper {
-				padding-left: 18em;
+				padding-left: 16em;
 			}
 
 		/* Main */
@@ -2921,13 +2929,13 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				width: 16em;
+				width: 14em;
 			}
 
 		/* Wrapper */
 
 			#wrapper {
-				padding-left: 16em;
+				padding-left: 14em;
 			}
 
 	}
@@ -3076,7 +3084,7 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:before {
-						background: #50c8b4;
+						background: #64a0a0;
 						color: #ffffff;
 						content: '\f0c9';
 						display: block;
@@ -3312,5 +3320,15 @@ input, select, textarea {
 			.button {
 				padding: 0;
 			}
+		
+		/* Section/Article */
+
+			header.major h2 {
+				font-size: 2em;
+			}
+
+				header.major h2 + p {
+					font-size: 1.25em;
+				}
 
 	}
